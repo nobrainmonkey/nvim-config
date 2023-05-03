@@ -32,3 +32,5 @@ local gknapsettings = {
     delay = 100,
 }
 vim.g.knap_settings = gknapsettings
+
+

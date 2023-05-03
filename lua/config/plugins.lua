@@ -46,8 +46,16 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 
 	-- Colorschemes
-	use("lunarvim/colorschemes")
 	use("folke/tokyonight.nvim")
+	use("rebelot/kanagawa.nvim")
+	use("navarasu/onedark.nvim")
+	use("shaunsingh/nord.nvim")
+	use({
+		"glepnir/zephyr-nvim",
+		requires = { "nvim-treesitter/nvim-treesitter", opt = true },
+	})
+    use({'marko-cerovac/material.nvim'})
+    use 'Mofiqul/vscode.nvim'
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -115,11 +123,25 @@ return packer.startup(function(use)
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 
-    -- vimtex
-    use "lervag/vimtex"
+	-- vimtex
+	use("lervag/vimtex")
 
-    -- auto-preview 
-    use "frabjous/knap"
+	-- auto-preview
+	use("frabjous/knap")
+
+	-- scoll bar
+    use {
+  'lewis6991/satellite.nvim',
+  config = function()
+    require('satellite').setup()
+  end
+}
+
+
+
+
+
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
