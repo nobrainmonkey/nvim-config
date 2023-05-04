@@ -129,13 +129,14 @@ return packer.startup(function(use)
 	-- auto-preview
 	use("frabjous/knap")
 
-	-- scoll bar
+    -- scoll bar
     use {
-  'lewis6991/satellite.nvim',
-  config = function()
-    require('satellite').setup()
-  end
-}
+        'lewis6991/satellite.nvim',
+        config = function()
+            require('satellite').setup()
+        end
+    }
+    use 'gorbit99/codewindow.nvim'
 
 
 
