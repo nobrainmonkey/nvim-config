@@ -124,20 +124,15 @@ _G.packer_plugins = {
     path = "/home/xihe/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["codewindow.nvim"] = {
-    loaded = true,
-    path = "/home/xihe/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
-    url = "https://github.com/gorbit99/codewindow.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/xihe/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["gitsigns.nvim"] = {
+  ["github-nvim-theme"] = {
     loaded = true,
-    path = "/home/xihe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
+    path = "/home/xihe/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -148,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xihe/.local/share/nvim/site/pack/packer/start/knap",
     url = "https://github.com/frabjous/knap"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/xihe/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -163,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xihe/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/home/xihe/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nord.nvim"] = {
     loaded = true,

@@ -54,8 +54,7 @@ return packer.startup(function(use)
 		"glepnir/zephyr-nvim",
 		requires = { "nvim-treesitter/nvim-treesitter", opt = true },
 	})
-    use({'marko-cerovac/material.nvim'})
-    use 'Mofiqul/vscode.nvim'
+	use("Mofiqul/vscode.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -78,7 +77,6 @@ return packer.startup(function(use)
 
 	-- smooth scrolling
 	use("declancm/cinnamon.nvim")
-
 	-- telescope
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
@@ -102,12 +100,6 @@ return packer.startup(function(use)
 	-- comment
 	use("numToStr/Comment.nvim")
 
-	-- gitsigns
-	use({
-		"lewis6991/gitsigns.nvim",
-		-- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
-	})
-
 	-- nvimt-tree
 	use("nvim-tree/nvim-web-devicons")
 	use({
@@ -129,20 +121,20 @@ return packer.startup(function(use)
 	-- auto-preview
 	use("frabjous/knap")
 
-    -- scoll bar
-    use {
-        'lewis6991/satellite.nvim',
-        config = function()
-            require('satellite').setup()
-        end
-    }
-    use 'gorbit99/codewindow.nvim'
+	-- scoll bar
+	use({
+		"lewis6991/satellite.nvim",
+		config = function()
+			require("satellite").setup()
+		end,
+	})
+	-- github theme
+	use({ "projekt0n/github-nvim-theme" })
 
-
-
-
-
-
+	-- function signature based on LSP
+	use({
+		"ray-x/lsp_signature.nvim",
+	})
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
