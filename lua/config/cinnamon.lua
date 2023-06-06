@@ -1,7 +1,7 @@
 require("cinnamon").setup({
 	default_keymaps = true,
 	default_delay = 3,
-	extra_keymaps = true,
+	extra_keymaps = false,
 	extended_keymaps = true,
 	override_keymaps = false,
 	scroll_limit = -1,
