@@ -17,3 +17,5 @@ require "config.knap"
 require "config.luasnip"
 require "config.cinnamon"
 require "config.signature"
+require "config.gitsigns"
+

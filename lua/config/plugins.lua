@@ -67,7 +67,6 @@ return packer.startup(function(use)
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
-	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
@@ -121,11 +120,16 @@ return packer.startup(function(use)
 	-- auto-preview
 	use("frabjous/knap")
 
+  -- gitsign
+  use "lewis6991/gitsigns.nvim"
+
 	-- scoll bar
 	use({
-		"lewis6991/satellite.nvim",
+		"petertriho/nvim-scrollbar",
 		config = function()
-			require("satellite").setup()
+			require("scrollbar").setup()
+      require('gitsigns').setup()
+      require("scrollbar.handlers.gitsigns").setup()
 		end,
 	})
 	-- github theme
