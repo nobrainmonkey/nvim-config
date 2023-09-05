@@ -1,3 +1,4 @@
+vim.cmd [[filetype plugin on]]
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -45,7 +46,6 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 -- vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
-vim.cmd [[filetype plugin on]]
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
