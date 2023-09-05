@@ -17,67 +17,67 @@ return {
   -- Examples of Greek letter snippets, autotriggered for efficiency
   s({trig="@a", snippetType="autosnippet"},
   {
-    t("\\alpha "),
+    t("\\alpha"),
   }
   ),
   s({trig="@b", snippetType="autosnippet"},
   {
-    t("\\beta "),
+    t("\\beta"),
   }
   ),
   s({trig="@g", snippetType="autosnippet"},
   {
-    t("\\gamma "),
+    t("\\gamma"),
   }
   ),
   s({trig="@d", snippetType="autosnippet"},
   {
-    t("\\delta "),
+    t("\\delta"),
   }
   ),
   s({trig="@e", snippetType="autosnippet"},
   {
-    t("\\epsilon "),
+    t("\\varepsilon"),
   }
   ),
   s({trig="@k", snippetType="autosnippet"},
   {
-    t("\\kappa "),
+    t("\\kappa"),
   }
   ),
   s({trig="@l", snippetType="autosnippet"},
   {
-    t("\\lambda "),
+    t("\\lambda"),
   }
   ),
   s({trig="@g", snippetType="autosnippet"},
   {
-    t("\\gamma "),
+    t("\\gamma"),
   }
   ),
   s({trig="@t", snippetType="autosnippet"},
   {
-    t("\\tau "),
+    t("\\tau"),
   }
   ),
   s({trig="@o", snippetType="autosnippet"},
   {
-    t("\\omega "),
+    t("\\omega"),
   }
   ),
   s({trig="@p", snippetType="autosnippet"},
   {
-    t("\\partial "),
+    t("\\partial"),
   }
   ),
   s({trig="**", snippetType="autosnippet"},
   {
-    t("\\cdot "),
+    t("\\cdot"),
   }
   ),
   s({trig="xx", snippetType="autosnippet"},
   {
-    t("\\times "),
+    t("\\times"),
   }
   ),
 
@@ -85,98 +85,100 @@ return {
 
   s({trig="theta", snippetType="autosnippet"},
   {
-    t("\\theta "),
+    t("\\theta"),
   },
   {condition= in_mathzone}
   ),
   s({trig="phi", snippetType="autosnippet"},
   {
-    t("\\phi "),
+    t("\\phi"),
   },
   {condition= in_mathzone}
   ),
   s({trig="Phi", snippetType="autosnippet"},
   {
-    t("\\Phi "),
+    t("\\Phi"),
   },
   {condition= in_mathzone}
   ),
   s({trig="psi", snippetType="autosnippet"},
   {
-    t("\\psi "),
+    t("\\varpsi"),
   },
   {condition= in_mathzone}
   ),
   s({trig="Psi", snippetType="autosnippet"},
   {
-    t("\\Psi "),
+    t("\\varPsi"),
   },
   {condition= in_mathzone}
   ),
   s({trig="hbar", snippetType="autosnippet"},
 
   {
-    t("\\hbar "),
+    t("\\hbar"),
   },
   {condition= in_mathzone}
   ),
   s({trig="inf", snippetType="autosnippet"},
   {
-    t("\\infty "),
+    t("\\infty"),
   },
   {condition= in_mathzone}
   ),
   s({trig="pi", snippetType="autosnippet"},
   {
-    t("\\pi "),
+    t("\\pi"),
   },
   {condition= in_mathzone}
   ),
   s({trig="grad", snippetType="autosnippet"},
   {
-    t("\\nabla "),
+    t("\\vec{\\nabla}"),
   },
   {condition= in_mathzone}
   ),
-
-
-
-
   s({trig="sin", snippetType="autosnippet"},
   {
-    t("\\sin "),
+    t("\\sin"),
   },
   {condition= in_mathzone}
   ),
   s({trig="cos", snippetType="autosnippet"},
   {
-    t("\\cos "),
+    t("\\cos"),
   },
   {condition= in_mathzone}
   ),
   s({trig="tan", snippetType="autosnippet"},
   {
-    t("\\tan "),
+    t("\\tan"),
+  },
+  {condition= in_mathzone}
+  ),
+  s({trig="qty", snippetType="autosnippet"},
+  {
+    t("\\qty"),
   },
   {condition= in_mathzone}
   ),
   s({trig="int", snippetType = "autosnippet", dscr = "Expand intgral command"},
   fmta(
-  "\\int \\ d<> ",
+  "\\int  d<>",
   {i(1)},
   {i(0)}
   ), {condition= in_mathzone}
   ),
   s({trig="e^", snippetType = "autosnippet", dscr = "Expand intgral command"},
   fmta(
-  "e^{<>} ",
+  "e^{<>}",
   {i(1)},
   {i(0)}
   ), {condition= in_mathzone}
   ),
   s({trig="dint", snippetType = "autosnippet", dscr = "Expand intgral command"},
   fmta(
-  "\\int_{<>}^{<>} <> \\ d <> ",
+  "\\int_{<>}^{<>} <> \\ d <>",
   {i(1),
   i(2),
   i(3),
@@ -185,14 +187,14 @@ return {
   ),
   s({trig="sum", snippetType = "autosnippet", dscr = "Expand intgral command"},
   fmta(
-  "\\sum_{<>} ",
+  "\\sum_{<>}",
   {i(1)},
   {i(0)}
   ), {condition= in_mathzone}
   ),
   s({trig="dsum", snippetType = "autosnippet", dscr = "Expand intgral command"},
   fmta(
-  "\\sum_{<>}^{<>} ",
+  "\\sum_{<>}^{<>}",
   {i(1),
   i(2)},
   {i(0)}
@@ -200,7 +202,7 @@ return {
   ),
   s({trig="ket", snippetType = "autosnippet", dscr="Expands 'ket' into '\\ ket'"},
   fmta(
-  "\\ket{<>} ",
+  "\\ket{<>}",
   { i(1) },
   {i (0) }
   ),
@@ -208,7 +210,7 @@ return {
   ),
   s({trig="vec", snippetType = "autosnippet", dscr="Expands 'ket' into '\\ ket'"},
   fmta(
-  "\\vec{<>} ",
+  "\\vec{<>}",
   { i(1) },
   {i (0) }
   ),
@@ -216,7 +218,15 @@ return {
   ),
   s({trig="hat", snippetType = "autosnippet", dscr="Expands 'ket' into '\\ ket'"},
   fmta(
-  "\\hat{<>} ",
+  "\\hat{<>}",
+  { i(1) },
+  {i (0) }
+  ),
+  {condition= in_mathzone}
+  ),
+  s({trig="vec", snippetType = "autosnippet", dscr="Expands 'ket' into '\\ ket'"},
+  fmta(
+  "\\vec{<>}",
   { i(1) },
   {i (0) }
   ),
@@ -224,7 +234,7 @@ return {
   ),
   s({trig="bra", snippetType = "autosnippet", dscr="Expands 'bra' into '\\ bra'"},
   fmta(
-  "\\bra{<>} ",
+  "\\bra{<>}",
   { i(1) },
   {i (0) }
   ),
@@ -232,7 +242,7 @@ return {
   ),
   s({trig="bkt", snippetType = "autosnippet", dscr="Expands 'bkt' into '\\ brraket'"},
   fmta(
-  "\\braket{<>}{<>} ",
+  "\\braket{<>}{<>}",
   { i(1), i(2) },
   {i (0) }
   ),
@@ -240,7 +250,7 @@ return {
   ),
   s({trig="frac", snippetType= "autosnippet", dscr="Expands 'ff' into '\frac{}{}'"},
   fmta(
-  "\\frac{<>}{<>} ",
+  "\\frac{<>}{<>}",
   {
     i(1),
     i(2)
@@ -251,7 +261,7 @@ return {
   ),
   s({trig="abs", snippetType = "autosnippet", dscr="Expands 'ket' into '\\ abs'"},
   fmta(
-  "\\abs{<>} ",
+  "\\abs{<>}",
   { i(1) },
   {i (0) }
   ),

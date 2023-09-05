@@ -2,10 +2,11 @@ local servers = {
   "lua_ls",
 	"pyright",
 	"jsonls",
-    "clangd",
-    "bashls",
-    "texlab",
-    "ltex",
+  "clangd",
+  "bashls",
+  "texlab",
+  "ltex",
+  "typst_lsp"
 }
 
 local settings = {

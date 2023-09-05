@@ -18,4 +18,4 @@ require "config.luasnip"
 require "config.cinnamon"
 require "config.signature"
 require "config.gitsigns"
-
+vim.filetype.add({ extension = {typ = "typst"}})
