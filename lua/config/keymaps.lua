@@ -69,3 +69,7 @@ vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
+vim.api.nvim_exec([[
+autocmd FileType typst nnoremap <buffer> <leader>j :lua require'config.typst_cmd'.start_typst_watch()<CR>
+]], false)
+

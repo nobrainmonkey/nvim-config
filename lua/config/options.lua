@@ -59,3 +59,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
+-- exit typst and mupdf when exit on vim 
+vim.cmd([[
+  autocmd VimLeavePre * call system("pkill -f 'typst watch'")
+  autocmd VimLeavePre * call system("pkill -f 'updf'")
+]])
+

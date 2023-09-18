@@ -125,6 +125,9 @@ return packer.startup(function(use)
   -- gitsign
   use "lewis6991/gitsigns.nvim"
 
+  -- ghosttext
+  use 'subnut/nvim-ghost.nvim'
+
 	-- scoll bar
 	use({
 		"petertriho/nvim-scrollbar",
