@@ -6,7 +6,8 @@ local servers = {
   "bashls",
   "texlab",
   "ltex",
-  "typst_lsp"
+  "typst_lsp",
+  "rust_analyzer"
 }
 
 local settings = {
